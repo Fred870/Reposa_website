@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Brands from "@/components/Brands";
 import About from "@/components/About";
 import HowItWorks from "@/components/HowItWorks";
 import Benefits from "@/components/Benefits";
+import Privacy from "@/components/Privacy";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import DownloadCTA from "@/components/DownloadCTA";
@@ -44,10 +44,11 @@ export default function Home() {
     <div className="font-sans text-text bg-white">
       <Header />
       <Hero />
-      <Brands />
+
       <About />
       <HowItWorks />
       <Benefits />
+      <Privacy />
       <Testimonials />
       <FAQ />
       <DownloadCTA />

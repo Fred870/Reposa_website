@@ -33,6 +33,7 @@ export default function Header() {
           <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">About</a>
           <a href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors">How It Works</a>
           <a href="#benefits" className="text-sm font-medium hover:text-primary transition-colors">Benefits</a>
+          <a href="#privacy" className="text-sm font-medium hover:text-primary transition-colors">Privacy</a>
           <a href="#faq" className="text-sm font-medium hover:text-primary transition-colors">FAQ</a>
           <a href="#app-store" className="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors">Download App</a>
         </nav>
