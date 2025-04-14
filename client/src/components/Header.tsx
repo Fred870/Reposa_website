@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Moon } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,8 +22,8 @@ export default function Header() {
     <header className={`fixed w-full ${scrolled ? 'bg-white/95' : 'bg-white'} backdrop-blur-sm shadow-sm z-50 transition-all duration-300`}>
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <a href="#" className="flex items-center space-x-2">
-          <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-            <Moon className="text-white h-5 w-5" />
+          <div className="w-10 h-10 rounded-full bg-primary overflow-hidden">
+            <img src="/assets/logo.png" alt="RePosa Logo" className="w-full h-full object-cover" />
           </div>
           <span className="text-xl font-bold text-primary">RePosa</span>
         </a>

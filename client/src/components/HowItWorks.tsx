@@ -6,9 +6,9 @@ export default function HowItWorks() {
     {
       number: 1,
       title: "Smart Calibration",
-      description: "Place your phone on your mattress and follow the simple setup process to calibrate the app to your specific bed and sleeping environment.",
+      description: "The phone can be placed anywhere on your body, like in your pocket, and uses a smart algorithm to learn your sleeping positions.",
       image: "https://images.unsplash.com/photo-1575990322357-b770ded7166e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300&q=80",
-      alt: "Phone calibration on mattress"
+      alt: "Phone calibration with person"
     },
     {
       number: 2,
@@ -20,16 +20,16 @@ export default function HowItWorks() {
     {
       number: 3,
       title: "Gentle Guidance",
-      description: "When suboptimal positions are detected, RePosa provides subtle vibration cues that encourage repositioning without fully waking you.",
+      description: "When suboptimal positions are detected, RePosa provides subtle vibration cues or optional sound alerts that encourage repositioning without fully waking you.",
       image: "https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300&q=80",
       alt: "Person changing sleep position"
     }
   ];
 
-  const stats = [
-    { value: "87%", label: "Reduction in snoring events" },
-    { value: "53%", label: "Fewer position changes" },
-    { value: "2.1h", label: "More deep sleep" }
+  const features = [
+    { value: "Data Privacy", label: "All data stored only on your device" },
+    { value: "Personalized", label: "Adapts to your unique sleep patterns" },
+    { value: "Smart Alerts", label: "Optional sound or vibration cues" }
   ];
 
   return (
@@ -92,7 +92,7 @@ export default function HowItWorks() {
                   whileInView="show"
                   viewport={{ once: true }}
                 >
-                  Smart Sleep Analytics
+                  Privacy & Smart Features
                 </motion.h3>
                 <motion.p 
                   className="mb-6 text-gray-700"
@@ -101,11 +101,12 @@ export default function HowItWorks() {
                   whileInView="show"
                   viewport={{ once: true }}
                 >
-                  Beyond real-time guidance, RePosa provides comprehensive sleep data and personalized
-                  insights to help you understand and improve your sleep patterns over time.
+                  RePosa respects your privacy. No user data is collected or transmitted - 
+                  all your sleep data stays securely on your device while still providing 
+                  personalized insights to help improve your sleep.
                 </motion.p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {stats.map((stat, index) => (
+                  {features.map((feature, index) => (
                     <motion.div 
                       key={index}
                       className="bg-accent p-4 rounded-lg"
@@ -114,8 +115,8 @@ export default function HowItWorks() {
                       whileInView="show"
                       viewport={{ once: true }}
                     >
-                      <div className="font-bold text-3xl text-primary">{stat.value}</div>
-                      <div className="text-sm text-gray-600">{stat.label}</div>
+                      <div className="font-bold text-xl text-primary">{feature.value}</div>
+                      <div className="text-sm text-gray-600">{feature.label}</div>
                     </motion.div>
                   ))}
                 </div>
