@@ -9,23 +9,23 @@ import NotFound from "@/pages/not-found";
 
 // Custom hash-based location hook for wouter
 function useHashLocation() {
-  const [location, setLocation] = useState(() => 
-    window.location.hash ? window.location.hash.replace('#', '') : '/'
+  const [location, setLocation] = useState(() =>
+    window.location.hash ? window.location.hash.replace("#", "") : "/",
   );
 
   useEffect(() => {
     // Handle hash changes
     const handleHashChange = () => {
-      const hash = window.location.hash.replace('#', '');
-      setLocation(hash || '/');
+      const hash = window.location.hash.replace("#", "");
+      setLocation(hash || "/");
     };
 
-    window.addEventListener('hashchange', handleHashChange);
+    window.addEventListener("hashchange", handleHashChange);
     // Handle initial hash on mount
     handleHashChange();
 
     return () => {
-      window.removeEventListener('hashchange', handleHashChange);
+      window.removeEventListener("hashchange", handleHashChange);
     };
   }, []);
 
