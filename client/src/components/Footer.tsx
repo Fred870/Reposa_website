@@ -9,23 +9,23 @@ export default function Footer() {
     {
       title: "RePosa.",
       links: [
-        { name: "About Us", href: "#" },
-        { name: "Scientific Research", href: "#" }
+        { name: "About Us", href: "#about" },
+        { name: "How It Works", href: "#how-it-works" },
+        { name: "Scientific Research", href: "/science" }
       ]
     },
     {
       title: "Resources",
       links: [
         { name: "FAQs", href: "#faq" },
-        { name: "Contact Us", href: "#" }
+        { name: "Contact Us", href: "mailto:hello@reposa.app" }
       ]
     },
     {
       title: "Legal",
       links: [
-        { name: "Privacy Policy", href: "#" },
-        { name: "Terms of Service", href: "#" },
-        { name: "Cookie Policy", href: "#" }
+        { name: "Privacy Policy", href: "/privacy" },
+        { name: "Terms of Service", href: "/terms" }
       ]
     }
   ];
@@ -52,7 +52,15 @@ export default function Footer() {
               <ul className="space-y-2">
                 {column.links.map(link => (
                   <li key={link.name}>
-                    <a href={link.href} className="text-gray-600 hover:text-primary transition-colors">
+                    <a 
+                      href={link.href} 
+                      className="text-gray-600 hover:text-primary transition-colors"
+                      onClick={(e) => {
+                        if (link.href.startsWith('#')) return;
+                        e.preventDefault();
+                        window.location.hash = link.href.replace('/', '');
+                      }}
+                    >
                       {link.name}
                     </a>
                   </li>
