@@ -57,8 +57,11 @@ export default function Footer() {
                       className="text-gray-600 hover:text-primary transition-colors"
                       onClick={(e) => {
                         if (link.href.startsWith('#')) return;
-                        e.preventDefault();
-                        window.location.hash = link.href.replace('/', '');
+                        if (link.href.startsWith('/')) {
+                          e.preventDefault();
+                          // Use proper hash-based navigation that works with our router
+                          window.location.hash = link.href;
+                        }
                       }}
                     >
                       {link.name}
