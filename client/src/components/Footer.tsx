@@ -88,7 +88,14 @@ export default function Footer() {
           </p>
           <div className="flex items-center">
             <span className="text-gray-500 text-sm mr-2">Download on</span>
-            <a href="#" className="bg-gray-900 text-white px-3 py-1 rounded-md text-xs flex items-center hover:bg-gray-800 transition-colors">
+            <a 
+              href="#" 
+              className="bg-gray-900 text-white px-3 py-1 rounded-md text-xs flex items-center hover:bg-gray-800 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                alert("Coming soon! The app will be available shortly.");
+              }}
+            >
               <i className="fab fa-apple mr-1"></i> App Store
             </a>
           </div>

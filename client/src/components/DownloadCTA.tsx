@@ -3,12 +3,6 @@ import { fadeIn, slideInFromLeft } from "@/lib/motion";
 
 
 export default function DownloadCTA() {
-  const stats = [
-    { value: "98%", label: "Reduction in Snoring" },
-    { value: "84%", label: "Improved Sleep Quality" },
-    { value: "91%", label: "Would Recommend" }
-  ];
-
   return (
     <section className="py-16 bg-primary" id="app-store">
       <div className="container mx-auto px-4">
@@ -29,8 +23,7 @@ export default function DownloadCTA() {
             whileInView="show"
             viewport={{ once: true }}
           >
-            Transform your sleep quality and reduce snoring with our science-backed 
-            sleep position monitoring technology.
+            Try our sleep position monitoring technology for yourself.
           </motion.p>
           
           <motion.div 
@@ -43,27 +36,15 @@ export default function DownloadCTA() {
             <a 
               href="#" 
               className="inline-block bg-white text-primary px-8 py-4 rounded-full font-medium text-lg hover:bg-accent transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                alert("Coming soon! The app will be available shortly.");
+              }}
             >
               <i className="fab fa-apple mr-2"></i> Download on App Store
             </a>
             <p className="text-white/70 mt-3 text-sm">Early access - Free for a limited time</p>
           </motion.div>
-          
-          <div className="flex flex-wrap justify-center items-center gap-8">
-            {stats.map((stat, index) => (
-              <motion.div 
-                key={index}
-                className="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-white text-center w-36"
-                variants={fadeIn('up', 0.4 + (index * 0.1))}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-              >
-                <div className="text-3xl font-bold">{stat.value}</div>
-                <div className="text-sm text-white/80">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

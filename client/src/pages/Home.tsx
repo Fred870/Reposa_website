@@ -4,8 +4,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import HowItWorks from "@/components/HowItWorks";
 import Benefits from "@/components/Benefits";
-import Privacy from "@/components/Privacy";
-import Testimonials from "@/components/Testimonials";
+import Science from "@/components/Science";
 import FAQ from "@/components/FAQ";
 import DownloadCTA from "@/components/DownloadCTA";
 import Newsletter from "@/components/Newsletter";
@@ -48,8 +47,7 @@ export default function Home() {
       <About />
       <HowItWorks />
       <Benefits />
-      <Privacy />
-      <Testimonials />
+      <Science />
       <FAQ />
       <DownloadCTA />
       <Newsletter />
