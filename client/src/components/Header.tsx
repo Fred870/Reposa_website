@@ -82,6 +82,13 @@ export default function Header() {
                 Benefits
               </a>
               <a 
+                href="#privacy" 
+                className="text-sm font-medium py-2 hover:text-primary transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Privacy
+              </a>
+              <a 
                 href="#faq" 
                 className="text-sm font-medium py-2 hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}

@@ -1,11 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/motion";
 import { 
-  Facebook, 
-  Twitter, 
-  Instagram, 
-  Linkedin,
-  Moon
+  Instagram
 } from "lucide-react";
 
 export default function Footer() {
@@ -40,10 +36,7 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: <Facebook className="h-4 w-4" />, href: "#" },
-    { icon: <Twitter className="h-4 w-4" />, href: "#" },
-    { icon: <Instagram className="h-4 w-4" />, href: "#" },
-    { icon: <Linkedin className="h-4 w-4" />, href: "#" }
+    { icon: <Instagram className="h-4 w-4" />, href: "#" }
   ];
 
   const currentYear = new Date().getFullYear();
@@ -80,16 +73,13 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <h3 className="font-semibold text-lg mb-4">Connect</h3>
-            <div className="flex space-x-4 mb-4">
-              {socialLinks.map((link, index) => (
-                <a 
-                  key={index}
-                  href={link.href} 
-                  className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary/90 transition-colors"
-                >
-                  {link.icon}
-                </a>
-              ))}
+            <div className="flex mb-4">
+              <a 
+                href="#" 
+                className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary/90 transition-colors"
+              >
+                <Instagram className="h-4 w-4" />
+              </a>
             </div>
             <p className="text-gray-600 text-sm">
               Email us at: <a href="mailto:hello@reposa.app" className="hover:text-primary transition-colors">hello@reposa.app</a>
