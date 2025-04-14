@@ -18,4 +18,4 @@ export const SOCIAL_LINKS = {
   linkedin: "#"
 };
 
-export const CONTACT_EMAIL = "hello@reposa.app";
+export const CONTACT_EMAIL = "info@reposa-sleep.rest";
