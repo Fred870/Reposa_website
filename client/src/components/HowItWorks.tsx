@@ -26,11 +26,7 @@ export default function HowItWorks() {
     }
   ];
 
-  const features = [
-    { value: "Data Privacy", label: "All data stored only on your device" },
-    { value: "Personalized", label: "Adapts to your unique sleep patterns" },
-    { value: "Smart Alerts", label: "Optional sound or vibration cues" }
-  ];
+
 
   return (
     <section className="py-16 bg-gradient-to-b from-white to-accent/30" id="how-it-works">
@@ -75,68 +71,7 @@ export default function HowItWorks() {
           ))}
         </div>
         
-        <motion.div 
-          className="mt-20 bg-white rounded-2xl shadow-lg overflow-hidden"
-          variants={fadeIn('up', 0.6)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-        >
-          <div className="p-8 md:p-12">
-            <div className="flex flex-col md:flex-row items-center">
-              <div className="md:w-2/3 md:pr-8 mb-8 md:mb-0">
-                <motion.h3 
-                  className="text-2xl font-bold mb-4 text-primary"
-                  variants={slideInFromLeft(0.2)}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true }}
-                >
-                  Privacy & Smart Features
-                </motion.h3>
-                <motion.p 
-                  className="mb-6 text-gray-700"
-                  variants={slideInFromLeft(0.3)}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true }}
-                >
-                  RePosa respects your privacy. No user data is collected or transmitted - 
-                  all your sleep data stays securely on your device while still providing 
-                  personalized insights to help improve your sleep.
-                </motion.p>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {features.map((feature, index) => (
-                    <motion.div 
-                      key={index}
-                      className="bg-accent p-4 rounded-lg"
-                      variants={slideInFromLeft(0.3 + (index * 0.1))}
-                      initial="hidden"
-                      whileInView="show"
-                      viewport={{ once: true }}
-                    >
-                      <div className="font-bold text-xl text-primary">{feature.value}</div>
-                      <div className="text-sm text-gray-600">{feature.label}</div>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-              <motion.div 
-                className="md:w-1/3"
-                variants={slideInFromRight(0.4)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-              >
-                <img 
-                  src="https://images.unsplash.com/photo-1563306406-e66174fa3787?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=500&q=80" 
-                  alt="Sleep analytics dashboard" 
-                  className="rounded-xl shadow-md"
-                />
-              </motion.div>
-            </div>
-          </div>
-        </motion.div>
+
       </div>
     </section>
   );
