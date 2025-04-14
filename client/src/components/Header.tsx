@@ -22,10 +22,10 @@ export default function Header() {
     <header className={`fixed w-full ${scrolled ? 'bg-white/95' : 'bg-white'} backdrop-blur-sm shadow-sm z-50 transition-all duration-300`}>
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <a href="#" className="flex items-center space-x-2">
-          <div className="w-10 h-10 rounded-full bg-primary overflow-hidden">
+          <div className="w-10 h-10 rounded-full overflow-hidden">
             <img src="/assets/logo.png" alt="RePosa Logo" className="w-full h-full object-cover" />
           </div>
-          <span className="text-xl font-bold text-primary">RePosa</span>
+          <span className="text-xl font-bold text-primary">RePosa.</span>
         </a>
         
         {/* Desktop Menu */}

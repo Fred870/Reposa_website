@@ -7,20 +7,16 @@ import {
 export default function Footer() {
   const footerLinks = [
     {
-      title: "RePosa",
+      title: "RePosa.",
       links: [
         { name: "About Us", href: "#" },
-        { name: "Our Story", href: "#" },
-        { name: "Scientific Research", href: "#" },
-        { name: "Press Kit", href: "#" }
+        { name: "Scientific Research", href: "#" }
       ]
     },
     {
       title: "Resources",
       links: [
-        { name: "Sleep Guide", href: "#" },
         { name: "FAQs", href: "#faq" },
-        { name: "Support Center", href: "#" },
         { name: "Contact Us", href: "#" }
       ]
     },
@@ -29,8 +25,7 @@ export default function Footer() {
       links: [
         { name: "Privacy Policy", href: "#" },
         { name: "Terms of Service", href: "#" },
-        { name: "Cookie Policy", href: "#" },
-        { name: "GDPR Compliance", href: "#" }
+        { name: "Cookie Policy", href: "#" }
       ]
     }
   ];

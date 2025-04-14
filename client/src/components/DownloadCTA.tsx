@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeIn, slideInFromLeft } from "@/lib/motion";
-import { Apple } from "lucide-react";
+
 
 export default function DownloadCTA() {
   const stats = [
@@ -44,7 +44,7 @@ export default function DownloadCTA() {
               href="#" 
               className="inline-block bg-white text-primary px-8 py-4 rounded-full font-medium text-lg hover:bg-accent transition-colors"
             >
-              <Apple className="inline-block mr-2 h-5 w-5" /> Download on App Store
+              <i className="fab fa-apple mr-2"></i> Download on App Store
             </a>
             <p className="text-white/70 mt-3 text-sm">Early access - Free for a limited time</p>
           </motion.div>
