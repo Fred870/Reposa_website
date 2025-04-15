@@ -63,9 +63,9 @@ export default function Hero() {
                     <i key={`star-full-${index}`} className="fas fa-star text-yellow-400"></i>
                   ))}
                   <i className="fas fa-star-half-alt text-yellow-400"></i>
-                  <span className="ml-1 font-medium">4.8/5</span>
+                  <span className="ml-1 font-medium">[App Rating]</span>
                 </div>
-                <p className="text-gray-600">from 2,000+ reviews</p>
+                <p className="text-gray-600">from [X]+ reviews</p>
               </div>
             </div>
           </motion.div>
