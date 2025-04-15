@@ -17,8 +17,8 @@ export default function HowItWorks() {
       title: "Night Monitoring",
       description:
         "While you sleep, RePosa continuously monitors your position using advanced motion and position detection algorithms.",
-      image: "/attached_assets/side_sleeping.png",
-      alt: "Sleep monitoring visualization",
+      image: "/attached_assets/monitoring.jpeg",
+      alt: "Person sleeping peacefully",
     },
     {
       number: 3,
