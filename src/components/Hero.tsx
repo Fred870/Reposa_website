@@ -78,7 +78,7 @@ export default function Hero() {
           >
             <div className="relative mx-auto md:ml-auto md:mr-0 w-full max-w-xs">
               <img 
-                src="https://images.unsplash.com/photo-1585007600263-71228e40c8d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=800&q=80" 
+                src="/attached_assets/appstore_image_03.jpeg" 
                 alt="Smartphone with RePosa app showing sleep tracking interface" 
                 className="rounded-3xl app-shadow"
               />
