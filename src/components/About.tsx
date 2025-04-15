@@ -22,7 +22,6 @@ export default function About() {
   ];
 
   const benefits = [
-    "Validated by sleep researchers",
     "Continuously improved with user data",
     "Non-invasive alternative to traditional treatments"
   ];
@@ -43,7 +42,7 @@ export default function About() {
             significantly reduces snoring and sleep apnea symptoms, improving overall sleep quality.
           </p>
         </motion.div>
-        
+
         <div className="grid md:grid-cols-3 gap-8">
           {infoCards.map((card, index) => (
             <motion.div 
@@ -62,7 +61,7 @@ export default function About() {
             </motion.div>
           ))}
         </div>
-        
+
         <motion.div 
           className="mt-16 bg-accent rounded-2xl overflow-hidden"
           variants={fadeIn('up', 0.5)}
@@ -121,7 +120,7 @@ export default function About() {
                 whileInView="show"
                 viewport={{ once: true }}
               >
-                Learn about our research <i className="fas fa-arrow-right ml-1"></i>
+                Learn about relevant research <i className="fas fa-arrow-right ml-1"></i>
               </motion.a>
             </div>
           </div>
