@@ -62,41 +62,7 @@ export default function About() {
           ))}
         </div>
 
-        <motion.div 
-          className="mt-16 bg-accent rounded-2xl overflow-hidden"
-          variants={fadeIn('up', 0.5)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-        >
-          <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2">
-              <img 
-                src="https://images.unsplash.com/photo-1573897683562-5395916b856a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Person sleeping peacefully" 
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-              <motion.h3 
-                className="text-2xl font-bold mb-4 text-primary"
-                variants={slideInFromRight(0.2)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-              >
-                Research-Based Approach
-              </motion.h3>
-              <motion.p 
-                className="mb-4 text-gray-700"
-                variants={slideInFromRight(0.3)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-              >
-                RePosa's technology is based on clinical studies demonstrating that positional therapy
-                can reduce apnea-hypopnea index (AHI) by up to 60% in position-dependent sleep apnea patients.
-              </motion.p>
+        
               <div className="mb-6">
                 {benefits.map((benefit, index) => (
                   <motion.div 
