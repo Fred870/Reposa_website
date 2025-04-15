@@ -40,7 +40,7 @@ function Router() {
   return (
     <Switch hook={useHashLocation}>
       <Route path="/" component={Home} />
-      <Route path="privacy" component={PrivacyPage} />
+      <Route path="/privacy" component={PrivacyPage} />
       <Route path="/terms" component={TermsPage} />
       <Route path="/science" component={SciencePage} />
       <Route component={NotFound} />
