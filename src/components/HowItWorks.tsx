@@ -62,7 +62,7 @@ export default function HowItWorks() {
                 <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
                 <p className="text-gray-600 mb-4">{step.description}</p>
                 <img 
-                  src={step.image} 
+                  src="/attached_assets/appstore_image_04.jpeg" 
                   alt={step.alt} 
                   className="rounded-xl shadow-md"
                 />
