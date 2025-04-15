@@ -6,7 +6,6 @@ import PrivacyPage from "@/pages/PrivacyPage";
 import TermsPage from "@/pages/TermsPage";
 import SciencePage from "@/pages/SciencePage";
 import NotFound from "@/pages/not-found";
-import Privacy from "@/components/Privacy";
 
 // Custom hash-based location hook for wouter
 function useHashLocation() {
