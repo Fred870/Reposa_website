@@ -92,17 +92,7 @@ export default function Hero() {
                   <i className="fas fa-moon text-primary text-xl"></i>
                 </div>
               </motion.div>
-              <motion.div 
-                className="absolute -bottom-4 -left-4 bg-white rounded-full py-1 px-3 shadow-lg"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ delay: 1, type: "spring", stiffness: 200 }}
-              >
-                <div className="flex items-center">
-                  <i className="fas fa-chart-line text-primary mr-1"></i>
-                  <span className="text-sm font-medium">98% Less Snoring</span>
-                </div>
-              </motion.div>
+              
             </div>
           </motion.div>
         </div>
