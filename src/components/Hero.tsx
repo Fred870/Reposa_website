@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Apple } from "lucide-react";
+
 import { fadeIn, slideInFromLeft, slideInFromRight } from "@/lib/motion";
 
 export default function Hero() {
@@ -30,7 +30,7 @@ export default function Hero() {
                 whileInView="show"
                 viewport={{ once: true }}
               >
-                <Apple className="mr-2 h-5 w-5" /> Download on App Store
+                <img src="/assets/logo.png" alt="Apple Logo" className="mr-2 h-5 w-5" /> Download on App Store
               </motion.a>
               <motion.a 
                 href="#how-it-works" 

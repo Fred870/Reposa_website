@@ -17,7 +17,7 @@ export default function HowItWorks() {
       title: "Night Monitoring",
       description:
         "While you sleep, RePosa continuously monitors your position using advanced motion and position detection algorithms.",
-      image: "/attached_assets/monitoring.jpeg",
+      image: "/attached_assets/side_sleeping.png",
       alt: "Person sleeping peacefully",
     },
     {
@@ -71,7 +71,7 @@ export default function HowItWorks() {
                 <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
                 <p className="text-gray-600 mb-4">{step.description}</p>
                 <img
-                  src="/attached_assets/appstore_image_04.jpeg"
+                  src="/attached_assets/whyitworks.png"
                   alt={step.alt}
                   className="rounded-xl shadow-md"
                 />

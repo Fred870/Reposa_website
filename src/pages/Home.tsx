@@ -43,8 +43,6 @@ export default function Home() {
     <div className="font-sans text-text bg-white">
       <Header />
       <Hero />
-
-      <About />
       <HowItWorks />
       <Benefits />
       <Science />
