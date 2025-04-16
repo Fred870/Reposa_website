@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fadeIn, slideInFromLeft, slideInFromRight } from "@/lib/motion";
+import { fadeIn } from "@/lib/motion";
 
 export default function HowItWorks() {
   const steps = [
@@ -69,9 +69,9 @@ export default function HowItWorks() {
                 <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
                 <p className="text-gray-600 mb-4">{step.description}</p>
                 <img
-                  src="/attached_assets/whyitworks.png"
+                  src={step.image}
                   alt={step.alt}
-                  className="rounded-xl shadow-md"
+                  className="rounded-xl shadow-md w-full object-cover"
                 />
               </div>
             </motion.div>
