@@ -30,7 +30,7 @@ export default function Hero() {
                 whileInView="show"
                 viewport={{ once: true }}
               >
-                <img src="/assets/logo.png" alt="Apple Logo" className="mr-2 h-5 w-5" /> Download on App Store
+                <i className="fab fa-apple mr-2"></i> Download on App Store
               </motion.a>
               <motion.a 
                 href="#how-it-works" 
