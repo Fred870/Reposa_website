@@ -6,42 +6,42 @@ export default function Benefits() {
   const healthBenefits = [
     {
       icon: <Heart className="text-white h-5 w-5" />,
-      title: "Lower Blood Pressure",
+      title: "Reduce Sleep Apnea Episodes",
       description:
-        "Better sleep positioning reduces sleep apnea episodes, which can help reduce hypertension and improve cardiovascular health.",
+        "Sleeping in side or stomach positions significantly reduces the frequency and severity of obstructive sleep apnea by preventing the airway from collapsing during sleep.",
     },
     {
       icon: <Brain className="text-white h-5 w-5" />,
-      title: "Enhanced Cognitive Function",
+      title: "Less Snoring, Deeper Sleep",
       description:
-        "Improved sleep quality leads to better focus, memory, and mental clarity throughout your day.",
+        "RePosa helps you stay off your back — a key trigger for snoring — resulting in quieter nights and more restorative sleep for both you and your partner.",
     },
     {
       icon: <Weight className="text-white h-5 w-5" />,
-      title: "Improved Metabolism",
+      title: "Relieve Neck and Back Pain",
       description:
-        "Quality sleep helps regulate hormones that control appetite and metabolism, supporting healthy weight management.",
+        "Promoting side sleeping helps reduce pressure on the spine, alleviating chronic neck and lower back pain over time.",
     },
   ];
 
   const lifestyleBenefits = [
     {
       icon: <Smile className="text-white h-5 w-5" />,
-      title: "Better Mood and Reduced Stress",
+      title: "Wake Up Refreshed",
       description:
-        "Quality sleep improves emotional regulation and stress management, leading to better relationships and work performance.",
+        "By helping you avoid positions that impair breathing or increase pain, RePosa enables more continuous sleep and fewer awakenings.",
     },
     {
       icon: <Users className="text-white h-5 w-5" />,
-      title: "Happier Sleep Partners",
+      title: "No More Elbow Nudges",
       description:
-        "Reduced snoring means your sleep partner gets better rest too, improving relationship satisfaction.",
+        "Partners of snorers often sleep better too — RePosa promotes quieter nights for everyone in the room.",
     },
     {
       icon: <Battery className="text-white h-5 w-5" />,
-      title: "Increased Energy Levels",
+      title: "Sustain Energy Throughout the Day",
       description:
-        "Wake up feeling refreshed and maintain better energy throughout the day without midday crashes.",
+        "More oxygen and deeper sleep cycles mean your body can restore itself properly, reducing daytime fatigue.",
     },
   ];
 
@@ -65,8 +65,9 @@ export default function Benefits() {
             Benefits Beyond Better Sleep
           </h2>
           <p className="text-gray-700">
-            Using RePosa doesn't just reduce snoring and sleep apnea symptoms—it
-            transforms your overall health and daily life quality.
+            RePosa isn't just a sleep tracker — it actively helps reduce snoring
+            and sleep apnea, relieves pain, and leads to better sleep for you
+            and those around you.
           </p>
         </motion.div>
 
@@ -172,9 +173,10 @@ export default function Benefits() {
                   whileInView="show"
                   viewport={{ once: true }}
                 >
-                  Positional therapy has been clinically demonstrated to reduce
-                  apnea events by 20-50% in clinical studies. RePosa takes this
-                  proven approach and makes it accessible to everyone.
+                  Sleeping on your back often worsens airway obstruction,
+                  contributing to snoring and sleep apnea. RePosa gently
+                  encourages healthier positions throughout the night — reducing
+                  risks and improving rest.
                 </motion.p>
                 <div className="mb-6">
                   {keyPoints.map((point, index) => (
