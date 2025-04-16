@@ -9,7 +9,7 @@ export default function Footer() {
       links: [
         { name: "About Us", href: "about" },
         { name: "How It Works", href: "#how-it-works" },
-        { name: "Scientific Research", href: "science" },
+        { name: "Scientific Research", href: "#science" },
       ],
     },
     {
