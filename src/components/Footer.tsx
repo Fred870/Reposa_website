@@ -9,9 +9,9 @@ export default function Footer() {
     {
       title: "RePosa.",
       links: [
-        { name: "About Us", href: "about" },
-        { name: "How It Works", href: "how-it-works" },
-        { name: "Scientific Research", href: "science" }
+        { name: "About Us", href: "/about" },
+        { name: "How It Works", href: "/#how-it-works" },
+        { name: "Scientific Research", href: "/science" }
       ]
     },
     {
@@ -87,9 +87,7 @@ export default function Footer() {
                 <Instagram className="h-4 w-4" />
               </a>
             </div>
-            <p className="text-gray-600 text-sm">
-              Email us at: <a href="mailto:hello@reposa.app" className="hover:text-primary transition-colors">hello@reposa.app</a>
-            </p>
+            
           </motion.div>
         </div>
         
