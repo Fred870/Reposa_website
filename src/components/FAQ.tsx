@@ -16,6 +16,11 @@ export default function FAQ() {
         "RePosa uses your smartphone's built-in gyroscope sensors to detect your sleep position. Once calibrated to your sleeping style and phone placement, it can accurately identify when you're sleeping on your back, side, or stomach, and track position changes throughout the night.",
     },
     {
+      question: "How do I stop sleeping on my back?",
+      answer:
+        "The optional nudging feature of the app lets you decide which positions are unfavorable. When the sleep position tracker detects these positions it can gently remind you to turn around.",
+    },
+    {
       question: "Will the vibrations wake me up?",
       answer:
         "RePosa is designed to provide gentle guidance without fully waking you. The app starts with very subtle vibrations that gradually increase only if necessary. You can add sound alerts in the app settings to find what works best for you.",

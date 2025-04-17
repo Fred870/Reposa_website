@@ -48,7 +48,7 @@ export default function Benefits() {
   const keyPoints = [
     "Non-invasive alternative to CPAP",
     "No special equipment required",
-    "Adaptive to your unique sleep patterns",
+    "Adaptive to your unique sleeping style",
   ];
 
   return (
@@ -164,7 +164,7 @@ export default function Benefits() {
                   whileInView="show"
                   viewport={{ once: true }}
                 >
-                  Why It Works
+                  What makes RePosa Sleep Position Tracker Great
                 </motion.h3>
                 <motion.p
                   className="mb-6"
@@ -174,9 +174,10 @@ export default function Benefits() {
                   viewport={{ once: true }}
                 >
                   Sleeping on your back often worsens airway obstruction,
-                  contributing to snoring and sleep apnea. RePosa gently
-                  encourages healthier positions throughout the night — reducing
-                  risks and improving rest.
+                  contributing to snoring and sleep apnea. RePosa takes the
+                  guess work out of which sleeping positions your body favors
+                  and gently encourages healthier positions throughout the night
+                  — reducing risks and improving rest.
                 </motion.p>
                 <div className="mb-6">
                   {keyPoints.map((point, index) => (
