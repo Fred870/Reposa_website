@@ -77,8 +77,8 @@ export default function Newsletter() {
                 Stay Updated
               </h2>
               <p className="text-gray-700">
-                Subscribe to our newsletter for sleep tips, app updates, and
-                exclusive offers.
+                Subscribe to our newsletter to get notified when the app
+                launches.
               </p>
             </div>
 
