@@ -8,24 +8,24 @@ export default function HowItWorks() {
       title: "Smart Calibration",
       description:
         "The phone can be placed anywhere on your body, like in your pocket, and uses a smart algorithm to learn your sleeping positions.",
-      image: "/attached_assets/calibration.png",
-      alt: "Phone calibration with person",
+      image: "/attached_assets/calibration.webp",
+      alt: "smart position calibration in the users pocket.",
     },
     {
       number: 2,
       title: "Night Monitoring",
       description:
         "While you sleep, RePosa continuously monitors your position using advanced motion and position detection algorithms.",
-      image: "/attached_assets/side_sleeping.png",
-      alt: "Person sleeping peacefully",
+      image: "/attached_assets/side_sleeping.webp",
+      alt: "Sleep position detection active while sleeping.",
     },
     {
       number: 3,
       title: "Gentle Guidance",
       description:
         "When suboptimal positions are detected, RePosa provides subtle vibration cues or optional sound alerts that encourage repositioning without fully waking you.",
-      image: "/attached_assets/nudging.jpeg",
-      alt: "Person changing sleep position",
+      image: "/attached_assets/nudging.webp",
+      alt: "Wrong sleeping position alert when lying on back.",
     },
   ];
 

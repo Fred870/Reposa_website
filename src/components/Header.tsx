@@ -27,7 +27,7 @@ export default function Header() {
           <div className="w-10 h-10 rounded-full overflow-hidden">
             <img
               src="/assets/logo.png"
-              alt="RePosa Logo"
+              alt="RePosa Sleep Position App"
               className="w-full h-full object-cover"
             />
           </div>

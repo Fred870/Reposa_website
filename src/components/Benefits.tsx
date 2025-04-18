@@ -65,9 +65,9 @@ export default function Benefits() {
             Benefits Beyond Better Sleep
           </h2>
           <p className="text-gray-700">
-            RePosa isn't just a sleep tracker — it actively helps reduce snoring
-            and sleep apnea, relieves pain, and leads to better sleep for you
-            and those around you.
+            RePosa doesn't just provide positional therapy for sleep apnea — it
+            actively helps reduce snoring, relieves pain, and leads to better
+            sleep for you and those around you.
           </p>
         </motion.div>
 
@@ -207,8 +207,8 @@ export default function Benefits() {
               </div>
               <div className="md:w-1/2">
                 <img
-                  src="attached_assets/whyitworks.png"
-                  alt="Person sleeping peacefully"
+                  src="attached_assets/whyitworks.webp"
+                  alt="Research behind the Position detection."
                   className="h-full w-full object-cover"
                 />
               </div>
