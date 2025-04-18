@@ -26,7 +26,7 @@ export default function Header() {
         <a href="/" className="flex items-center space-x-2">
           <div className="w-10 h-10 rounded-full overflow-hidden">
             <img
-              src="/assets/logo.webp"
+              src="/attached_assets/logo.webp"
               alt="RePosa Sleep Position App"
               className="w-full h-full object-cover"
             />
