@@ -8,15 +8,15 @@ export default function Footer() {
       title: "RePosa.",
       links: [
         { name: "About Us", href: "about" },
-        { name: "How It Works", href: "#how-it-works" },
-        { name: "Scientific Research", href: "#science" },
+        { name: "How It Works", href: "/#how-it-works" },
+        { name: "Scientific Research", href: "/#science" },
       ],
     },
     {
       title: "Resources",
       links: [
-        { name: "FAQs", href: "#faq" },
-        { name: "Contact Us", href: "mailto:hello@reposa.app" },
+        { name: "FAQs", href: "/#faq" },
+        { name: "Contact Us", href: "mailto:info@reposa-sleep.rest" },
       ],
     },
     {

@@ -43,7 +43,7 @@ export default function HowItWorks() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl font-bold mb-4 text-primary">
-            How RePosa Works
+            How the Sleep Position Tracking Works
           </h2>
           <p className="text-gray-700">
             Using your smartphone's built-in sensors, RePosa monitors and
