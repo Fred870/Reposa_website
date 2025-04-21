@@ -117,7 +117,6 @@ export default function Newsletter() {
                               placeholder="Your email address"
                               {...field}
                               className="px-4 py-6 rounded-full border border-gray-300 focus:border-primary focus:outline-none"
-                              name="email"
                             />
                           </FormControl>
                         </FormItem>
