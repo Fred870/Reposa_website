@@ -23,7 +23,7 @@ export default function DownloadCTA() {
             whileInView="show"
             viewport={{ once: true }}
           >
-            Try our sleep position monitoring technology for yourself.
+            Try our sleep position monitor for yourself.
           </motion.p>
           
           <motion.div 
