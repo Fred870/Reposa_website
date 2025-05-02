@@ -24,7 +24,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <motion.a
-                href="https://apps.apple.com/us/app/reposa/id6744608500"
+                href="https://apps.apple.com/us/app/reposa/id6744608500?ppid=fa0b9ed5-ec82-47da-95a7-a431c4b9b4f1"
                 className="bg-primary text-white px-6 py-3 rounded-full font-medium flex items-center justify-center hover:bg-primary/90 transition-colors"
                 variants={slideInFromLeft(0.5)}
                 initial="hidden"

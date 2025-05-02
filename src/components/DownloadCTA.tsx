@@ -33,7 +33,7 @@ export default function DownloadCTA() {
             viewport={{ once: true }}
           >
             <a
-              href="https://apps.apple.com/us/app/reposa/id6744608500"
+              href="https://apps.apple.com/us/app/reposa/id6744608500?ppid=fa0b9ed5-ec82-47da-95a7-a431c4b9b4f1"
               className="inline-block bg-white text-primary px-8 py-4 rounded-full font-medium text-lg hover:bg-accent transition-colors"
             >
               <i className="fab fa-apple mr-2"></i> Download on App Store
