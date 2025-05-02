@@ -1,8 +1,49 @@
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-
 import { fadeIn, slideInFromLeft, slideInFromRight } from "@/lib/motion";
 
 export default function Hero() {
+  const [rating, setRating] = useState(0);
+  const [reviewCount, setReviewCount] = useState(0);
+
+  useEffect(() => {
+    async function fetchAppRating() {
+      try {
+        const APP_ID = "6744608500"; // your App Store ID
+        const res = await fetch(
+          `https://itunes.apple.com/lookup?id=${APP_ID}&country=us`,
+        );
+        const data = await res.json();
+        if (data.results?.length) {
+          const info = data.results[0];
+          setRating(
+            info.averageUserRatingForCurrentVersion || info.averageUserRating,
+          );
+          setReviewCount(
+            info.userRatingCountForCurrentVersion || info.userRatingCount,
+          );
+        }
+      } catch (err) {
+        console.error("Failed to load App Store rating", err);
+      }
+    }
+    fetchAppRating();
+  }, []);
+
+  const renderStars = (value: number) => {
+    return Array.from({ length: 5 }, (_, i) => {
+      const starNum = i + 1;
+      const isFull = value >= starNum;
+      const isHalf = !isFull && value >= starNum - 0.5;
+      const iconClass = isFull
+        ? "fas fa-star"
+        : isHalf
+          ? "fas fa-star-half-alt"
+          : "far fa-star";
+      return <i key={i} className={`${iconClass} text-yellow-400`} />;
+    });
+  };
+
   return (
     <section className="pt-24 pb-16 hero-gradient" id="hero">
       <div className="container mx-auto px-4">
@@ -47,34 +88,29 @@ export default function Hero() {
             <div className="flex items-center space-x-4">
               <div className="flex -space-x-2">
                 {[
-                  { bg: "bg-gray-300" },
-                  { bg: "bg-gray-200" },
-                  { bg: "bg-gray-400" },
-                  { bg: "bg-gray-300" },
-                ].map((item, index) => (
+                  "bg-gray-300",
+                  "bg-gray-200",
+                  "bg-gray-400",
+                  "bg-gray-300",
+                ].map((bg, i) => (
                   <div
-                    key={`avatar-${index}`}
-                    className={`w-8 h-8 rounded-full ${item.bg} border-2 border-white`}
+                    key={i}
+                    className={`w-8 h-8 rounded-full ${bg} border-2 border-white`}
                   />
                 ))}
               </div>
               <div className="text-sm">
                 <div className="flex items-center">
-                  {Array(4)
-                    .fill(0)
-                    .map((_, index) => (
-                      <i
-                        key={`star-full-${index}`}
-                        className="fas fa-star text-yellow-400"
-                      ></i>
-                    ))}
-                  <i className="fas fa-star-half-alt text-yellow-400"></i>
-                  <span className="ml-1 font-medium">[App Rating]</span>
+                  {renderStars(rating)}
+                  <span className="ml-1 font-medium">{rating.toFixed(1)}</span>
                 </div>
-                <p className="text-gray-600">from [X]+ reviews</p>
+                <p className="text-gray-600">
+                  from {reviewCount.toLocaleString()} reviews
+                </p>
               </div>
             </div>
           </motion.div>
+
           <motion.div
             className="md:w-1/2 relative"
             variants={slideInFromRight(0.5)}

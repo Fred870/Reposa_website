@@ -132,7 +132,7 @@ export default function Header() {
                 FAQ
               </a>
               <a
-                href="#app-store"
+                href="https://apps.apple.com/us/app/reposa/id6744608500?ppid=fa0b9ed5-ec82-47da-95a7-a431c4b9b4f1"
                 className="bg-primary text-white px-4 py-2 rounded-full text-center text-sm font-medium hover:bg-primary/90 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
