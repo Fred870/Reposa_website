@@ -56,12 +56,12 @@ export default function Hero() {
             viewport={{ once: true }}
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-primary">
-              Optimize Your Sleep Position
+              Track and Optimize Your Sleep Position
             </h1>
             <p className="text-lg mb-6 text-gray-700">
-              RePosa utilizes your smartphone sensors to monitor and improve
-              sleeping positions, reducing snoring and sleep apnea symptoms for
-              better rest.
+              RePosa uses your smartphone sensors to monitor and improve your
+              posture during sleep, reducing snoring and sleep apnea symptoms
+              for better rest.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <motion.a
