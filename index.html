@@ -39,23 +39,28 @@
       name="description"
       content="RePosa uses your phone sensors to monitor and improve sleep positions, helping reduce snoring and sleep apnea."
     />
-    <meta
-      property="og:title"
-      content="RePosa - Sleep Position Monitoring App"
-    />
+
+    <title>RePosa – Sleep Position Tracker &amp; Trainer App</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta property="og:title" content="RePosa – Sleep Position Tracker App" />
     <meta
       property="og:description"
-      content="RePosa improves your sleep by tracking and correcting sleep positions."
+      content="RePosa improves your sleep by tracking and correcting your sleep position."
     />
     <meta property="og:url" content="https://reposa-sleep.rest" />
-    <title>RePosa - Sleep Position Monitoring App</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Netlify form fallback for static detection -->
     <form name="newsletter" netlify hidden>
+      <input type="hidden" name="form-name" value="newsletter" />
       <input type="email" name="email" />
     </form>
   </body>
