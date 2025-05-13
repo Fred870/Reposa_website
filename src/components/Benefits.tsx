@@ -195,7 +195,7 @@ export default function Benefits() {
                   ))}
                 </div>
                 <motion.a
-                  href="#app-store"
+                  href="https://apps.apple.com/us/app/reposa/id6744608500"
                   className="bg-white text-primary px-6 py-3 rounded-full font-medium inline-flex items-center justify-center hover:bg-accent transition-colors"
                   variants={slideInFromLeft(0.6)}
                   initial="hidden"

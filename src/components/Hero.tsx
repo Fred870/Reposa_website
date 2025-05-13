@@ -1,48 +1,51 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn, slideInFromLeft, slideInFromRight } from "@/lib/motion";
+// Import icons from react-icons for reliable star rendering
+import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
 export default function Hero() {
   const [rating, setRating] = useState(0);
   const [reviewCount, setReviewCount] = useState(0);
 
   useEffect(() => {
-    async function fetchAppRating() {
-      try {
-        const APP_ID = "6744608500"; // your App Store ID
-        const res = await fetch(
-          `https://itunes.apple.com/lookup?id=${APP_ID}&country=us`,
+    const APP_ID = "6744608500";
+
+    // JSONP callback
+    (window as any).handleItunesLookup = (data: any) => {
+      if (data.results?.length) {
+        const info = data.results[0];
+        setRating(
+          info.averageUserRatingForCurrentVersion ?? info.averageUserRating,
         );
-        const data = await res.json();
-        if (data.results?.length) {
-          const info = data.results[0];
-          setRating(
-            info.averageUserRatingForCurrentVersion || info.averageUserRating,
-          );
-          setReviewCount(
-            info.userRatingCountForCurrentVersion || info.userRatingCount,
-          );
-        }
-      } catch (err) {
-        console.error("Failed to load App Store rating", err);
+        setReviewCount(
+          info.userRatingCountForCurrentVersion ?? info.userRatingCount,
+        );
       }
-    }
-    fetchAppRating();
+    };
+
+    // inject JSONP script
+    const script = document.createElement("script");
+    script.src = `https://itunes.apple.com/lookup?id=${APP_ID}&country=de&callback=handleItunesLookup`;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+      delete (window as any).handleItunesLookup;
+    };
   }, []);
 
-  const renderStars = (value: number) => {
-    return Array.from({ length: 5 }, (_, i) => {
+  // Render stars using react-icons
+  const renderStars = (value: number) =>
+    Array.from({ length: 5 }, (_, i) => {
       const starNum = i + 1;
       const isFull = value >= starNum;
       const isHalf = !isFull && value >= starNum - 0.5;
-      const iconClass = isFull
-        ? "fas fa-star"
-        : isHalf
-          ? "fas fa-star-half-alt"
-          : "far fa-star";
-      return <i key={i} className={`${iconClass} text-yellow-400`} />;
+
+      if (isFull) return <FaStar key={i} className="text-yellow-400" />;
+      if (isHalf) return <FaStarHalfAlt key={i} className="text-yellow-400" />;
+      return <FaRegStar key={i} className="text-yellow-400" />;
     });
-  };
 
   return (
     <section className="pt-24 pb-16 hero-gradient" id="hero">
@@ -65,7 +68,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <motion.a
-                href="https://apps.apple.com/us/app/reposa/id6744608500?ppid=fa0b9ed5-ec82-47da-95a7-a431c4b9b4f1"
+                href="https://apps.apple.com/us/app/reposa/id6744608500"
                 className="bg-primary text-white px-6 py-3 rounded-full font-medium flex items-center justify-center hover:bg-primary/90 transition-colors"
                 variants={slideInFromLeft(0.5)}
                 initial="hidden"
@@ -86,19 +89,6 @@ export default function Hero() {
               </motion.a>
             </div>
             <div className="flex items-center space-x-4">
-              <div className="flex -space-x-2">
-                {[
-                  "bg-gray-300",
-                  "bg-gray-200",
-                  "bg-gray-400",
-                  "bg-gray-300",
-                ].map((bg, i) => (
-                  <div
-                    key={i}
-                    className={`w-8 h-8 rounded-full ${bg} border-2 border-white`}
-                  />
-                ))}
-              </div>
               <div className="text-sm">
                 <div className="flex items-center">
                   {renderStars(rating)}

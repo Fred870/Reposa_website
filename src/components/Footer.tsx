@@ -91,16 +91,11 @@ export default function Footer() {
             © {currentYear} RePosa. All rights reserved.
           </p>
           <div className="flex items-center">
-            <span className="text-gray-500 text-sm mr-2">Download on</span>
-            <a
-              href="#"
-              className="bg-gray-900 text-white px-3 py-1 rounded-md text-xs flex items-center hover:bg-gray-800 transition-colors"
-              onClick={(e) => {
-                e.preventDefault();
-                alert("Coming soon! The app will be available shortly.");
-              }}
-            >
-              <i className="fab fa-apple mr-1"></i> App Store
+            <a href="https://apps.apple.com/us/app/reposa/id6744608500?itscg=30200&itsct=apps_box_badge&mttnsubad=6744608500">
+              <img
+                src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1746057600"
+                alt="Download on the App Store"
+              />
             </a>
           </div>
         </div>
